@@ -61,6 +61,7 @@ export default function AdminLayout() {
       <div id="header">
         <div className="navbar">
           <div className="tool-bar">
+            <div className="title">WELCOME</div>
             <div className="navbar-btn">
               <i
                 onClick={() => {
@@ -69,9 +70,10 @@ export default function AdminLayout() {
                 className="fa-solid fa-bars"
               ></i>
             </div>
-            <div className="title">WELCOME</div>
           </div>
-          <p>LOGO</p>
+          <div className="logo">
+            <p>LOGO</p>
+          </div>
           <div className="action">
             <div
               className="avatar"
@@ -129,9 +131,66 @@ export default function AdminLayout() {
           </li>
         </ul>
       </div>
-      {/* <div className="main">
-        <div className="card" />
-      </div> */}
+      <div className="main">
+        <div className="block">
+          <div className="search-bar">
+            <input type="search" placeholder="Search" />
+          </div>
+          <div className="datetime">
+            <div className="start-time">Start Time:</div>
+            <div className="end-time">End Time:</div>
+          </div>
+        </div>
+        <div className="table-main">
+          <div className="App">
+            <table>
+              <tr>
+                <th>Campaign Name</th>
+                <th>Status</th>
+                <th>Used Amount</th>
+                <th>Usage Rate</th>
+                <th>Budget</th>
+                <th>Start date</th>
+                <th>End date</th>
+              </tr>
+              <tr>
+                <td>Anom</td>
+                <td><i class="green far fa-circle"></i></td>
+                <td>$10</td>
+                <td>0.5%</td>
+                <td>$100000</td>
+                <td>$2020-12-12 10:00</td>
+                <td>$2020-12-14 12:59</td>
+              </tr>
+              <tr>
+                <td>Megha</td>
+                <td><i class="red far fa-circle"></i></td>
+                <td>$10</td>
+                <td>0.5%</td>
+                <td>$100000</td>
+                <td>$2020-12-12 10:00</td>
+                <td>$2020-12-14 12:59</td>
+              </tr>
+              <tr>
+                <td>Subham</td>
+                <td><i class="red far fa-circle"></i></td>
+                <td>$10</td>
+                <td>0.5%</td>
+                <td>$100000</td>
+                <td>$2020-12-12 10:00</td>
+                <td>$2020-12-14 12:59</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <div className="page-navigation">
+          <div className="page-navigation-btn">
+            <button class="fas fa-chevron-left" />
+            <span>1 ............. 10</span>
+            <button class="fas fa-chevron-right" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
